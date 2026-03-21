@@ -16,7 +16,7 @@ so it accesses files as `~/playbook/act-1/challenge-1.1/data/summons.txt` etc.
 | Act 4 Layer 1 - Cipher Hall | Done | Done | **MISSING** | Needs challenge.md + dependency-chain.md |
 | Act 4 Layer 2 - Data Maze | Done | Done | **MISSING** | Needs challenge.md |
 | Act 4 Layer 3 - Logic Gates | Done | Done | **MISSING** | Needs challenge.md |
-| Act 5 Assembly Protocol | N/A | Done | **MISSING** | Needs challenge.md |
+| Act 5 Assembly Protocol | N/A | Done | Done | **COMPLETE** |
 
 Also needed: **agents.md path reconciliation** (see bottom of this doc).
 
