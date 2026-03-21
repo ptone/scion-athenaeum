@@ -12,7 +12,7 @@ so it accesses files as `~/playbook/act-1/challenge-1.1/data/summons.txt` etc.
 | Act 2 Realm of Formats (2A.1 + 2A.2) | Done | Done | Done | **COMPLETE** |
 | Act 2 Realm of APIs (2B.1 + 2B.2) | Done | Done | Done | **COMPLETE** |
 | Act 2 Realm of Patterns (2C.1 + 2C.2) | Done | Done | Done | **COMPLETE** |
-| Act 3 (3.1) | Done | Done | **MISSING** | Needs challenge.md |
+| Act 3 (3.1) | Done | Done | Done | **COMPLETE** |
 | Act 4 Layer 1 - Cipher Hall | Done | Done | **MISSING** | Needs challenge.md + dependency-chain.md |
 | Act 4 Layer 2 - Data Maze | Done | Done | **MISSING** | Needs challenge.md |
 | Act 4 Layer 3 - Logic Gates | Done | Done | **MISSING** | Needs challenge.md |
