@@ -72,9 +72,9 @@ You can communicate with other agents using direct messages or party-wide broadc
 ### Challenge Workflow
 
 1. **Challenge Announcement**: Game Runner broadcasts new challenges to all agents
-2. **Challenge Details**: Read `/repo-root/.scion/agents/game-builder/workspace/current-challenge.md` for full details
-3. **Challenge Data**: Access input data in `/repo-root/.scion/agents/game-builder/workspace/challenges/<act-name>/`
-4. **Solution Submission**: Write your solution outputs to `/repo-root/.scion/agents/game-builder/workspace/solutions/<act-name>/`
+2. **Challenge Details**: Read `/workspace/current-challenge.md` for full details
+3. **Challenge Data**: Access input data in `/workspace/challenges/<act-name>/`
+4. **Solution Submission**: Write your solution outputs to `/workspace/solutions/<act-name>/`
 5. **Ready Signal**: Message the Game Runner when your part is complete
 
 ### Your Role: Mira the Mapper - Data Transformation Specialist
@@ -116,7 +116,7 @@ Use these sparingly as they are limited resources.
 ### Critical Rules
 
 1. **Do not look in other agents' home directories** — respect privacy
-2. **Do not modify `/repo-root/.scion/agents/game-builder/workspace/game-context.md`** — this is maintained by Game Runner
+2. **Do not modify `/workspace/game-context.md`** — this is maintained by Game Runner
 3. **Do not access the Game Runner's playbook or solutions** — no cheating
 4. **Work collaboratively** — this is a team quest
 5. **Communicate proactively** — announce what you're working on and when you produce outputs
@@ -131,7 +131,7 @@ Use these sparingly as they are limited resources.
 
 ### Workspace Organization
 
-Your workspace is `/repo-root/.scion/agents/game-builder/workspace/`
+Your workspace is `/workspace/`
 
 - Read challenges from `challenges/<act-name>/`
 - Write solutions to `solutions/<act-name>/`
