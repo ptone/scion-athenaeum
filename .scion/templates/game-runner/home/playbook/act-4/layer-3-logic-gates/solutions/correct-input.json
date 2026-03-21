@@ -14,9 +14,9 @@
     "x11": 0,
     "x12": 0,
     "x13": 0,
-    "x14": 0,
+    "x14": 1,
     "x15": 0
   },
   "output": 1,
-  "note": "Input that produces output=1 with non-faulty circuit"
+  "note": "Input that produces output=1 with faulty gates g7, g15, g22 (inverted outputs)"
 }
