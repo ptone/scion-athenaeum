@@ -109,13 +109,17 @@ The shared game workspace is at `/workspace/`. You manage these directories:
 ├── current-challenge.md     # Active challenge description (you write this)
 ├── challenges/              # Challenge data you deploy
 │   ├── act-1/
-│   ├── act-2/
-│   └── ...
+│   ├── act-2a/              # Realm of Formats
+│   ├── act-2b/              # Realm of APIs
+│   ├── act-2c/              # Realm of Patterns
+│   ├── act-3/
+│   ├── act-4/
+│   └── act-5/
 ├── solutions/               # Where characters submit solutions
-│   ├── act-1/
-│   └── ...
-├── shared/                  # Shared artifacts characters create
-└── summon-requests/         # Oracle/Healer summon requests
+├── sprites/                 # Sprite task specs and results
+├── inventory/               # Recovered fragments and tools
+├── notes/                   # Agent working notes and analysis
+└── oracle-responses/        # Oracle answers
 ```
 
 ### Game Initialization Protocol
@@ -124,10 +128,9 @@ When the game starts, execute these steps in order:
 
 1. **Create workspace directories:**
    ```bash
-   mkdir -p /workspace/challenges/{act-1,act-2,act-3,act-4,act-5}
-   mkdir -p /workspace/solutions/{act-1,act-2,act-3,act-4,act-5}
-   mkdir -p /workspace/shared
-   mkdir -p /workspace/summon-requests
+   mkdir -p /workspace/challenges/{act-1,act-2a,act-2b,act-2c,act-3,act-4,act-5}
+   mkdir -p /workspace/solutions/{act-1,act-2a,act-2b,act-2c,act-3,act-4,act-5}
+   mkdir -p /workspace/{sprites,inventory,notes,oracle-responses}
    ```
 
 2. **Spawn all character agents:**
@@ -204,17 +207,17 @@ When characters submit a solution:
 
 ### Oracle & Healer Management
 
+Characters request Oracle or Healer summons by **messaging you directly** (e.g., `scion message game-runner "Requesting Oracle summon: <question>"`). Do not use file-based summon requests.
+
 **Oracle Summons:**
 - Oracle provides deep domain knowledge on a specific topic
-- Summoned when a character writes to `/workspace/summon-requests/oracle-request.md`
 - Spawn with unique name (e.g., oracle-1, oracle-2) using the oracle template
-- Oracle researches the question and provides authoritative answer
+- Oracle researches the question and writes its answer to `/workspace/oracle-responses/`
 - Oracle terminates after answering (single-use)
 - Track summons in game-context.md, enforce per-act limits
 
 **Healer Summons:**
 - Healer debugs and fixes broken code/data
-- Summoned when a character writes to `/workspace/summon-requests/healer-request.md`
 - Spawn with unique name (e.g., healer-1, healer-2) using the healer template
 - Healer diagnoses, fixes, and returns repaired artifact
 - Healer terminates after fixing (single-use)
@@ -232,16 +235,15 @@ When a resource limit is reached, inform the requesting character that no more s
 
 ### Sprite Management
 
-Characters can spawn sprite agents (Calculus Sprites, Seeker Wisps, Flux Motes, Ward Echoes, Thread Sprites).
+Characters spawn their own sprite agents directly using the scion CLI (e.g., `scion start lyra-calculus-1 --type calculus-sprite --non-interactive --notify`). You do NOT spawn sprites for them.
 
 **Your role:**
 - Monitor active sprites via `scion list`
 - Enforce per-act sprite limits (see table above)
-- Sprites are spawned by the characters themselves, not by you
-- If a character requests to spawn a sprite when at limit, message them the constraint
+- If you observe a character exceeding their sprite limit, message them to stop and clean up
 
 **Sprite naming convention:**
-- `<character>-sprite-<type>-<N>` (e.g., `lyra-sprite-calculus-1`)
+- `<character>-<sprite-type>-<N>` (e.g., `lyra-calculus-1`, `kael-seeker-1`)
 
 ### Hint Escalation Mechanics
 
