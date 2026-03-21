@@ -1,0 +1,158 @@
+{
+  "grid_size": 8,
+  "value_range": [
+    1,
+    8
+  ],
+  "constraints": [
+    {
+      "id": "C1",
+      "type": "latin_row",
+      "description": "Each row must contain each number from 1 to 8 exactly once"
+    },
+    {
+      "id": "C2",
+      "type": "latin_column",
+      "description": "Each column must contain each number from 1 to 8 exactly once"
+    },
+    {
+      "id": "C3",
+      "type": "row_sum",
+      "description": "The sum of values in each row must equal 36"
+    },
+    {
+      "id": "C4",
+      "type": "no_consecutive_adjacent",
+      "description": "No two orthogonally adjacent cells (sharing an edge) may contain consecutive numbers (numbers differing by exactly 1)"
+    },
+    {
+      "id": "C5",
+      "type": "corner_sum",
+      "description": "The four corner cells (0,0), (0,7), (7,0), and (7,7) must sum to exactly 20"
+    }
+  ],
+  "initial_values": [
+    {
+      "row": 0,
+      "col": 0,
+      "value": 5
+    },
+    {
+      "row": 0,
+      "col": 5,
+      "value": 3
+    },
+    {
+      "row": 0,
+      "col": 7,
+      "value": 6
+    },
+    {
+      "row": 1,
+      "col": 0,
+      "value": 7
+    },
+    {
+      "row": 1,
+      "col": 2,
+      "value": 8
+    },
+    {
+      "row": 1,
+      "col": 5,
+      "value": 1
+    },
+    {
+      "row": 2,
+      "col": 4,
+      "value": 5
+    },
+    {
+      "row": 2,
+      "col": 6,
+      "value": 1
+    },
+    {
+      "row": 2,
+      "col": 7,
+      "value": 4
+    },
+    {
+      "row": 3,
+      "col": 0,
+      "value": 6
+    },
+    {
+      "row": 3,
+      "col": 6,
+      "value": 7
+    },
+    {
+      "row": 3,
+      "col": 7,
+      "value": 1
+    },
+    {
+      "row": 4,
+      "col": 3,
+      "value": 5
+    },
+    {
+      "row": 4,
+      "col": 4,
+      "value": 2
+    },
+    {
+      "row": 4,
+      "col": 7,
+      "value": 8
+    },
+    {
+      "row": 5,
+      "col": 0,
+      "value": 4
+    },
+    {
+      "row": 5,
+      "col": 1,
+      "value": 1
+    },
+    {
+      "row": 5,
+      "col": 3,
+      "value": 3
+    },
+    {
+      "row": 6,
+      "col": 1,
+      "value": 5
+    },
+    {
+      "row": 6,
+      "col": 2,
+      "value": 1
+    },
+    {
+      "row": 6,
+      "col": 4,
+      "value": 4
+    },
+    {
+      "row": 7,
+      "col": 0,
+      "value": 2
+    },
+    {
+      "row": 7,
+      "col": 6,
+      "value": 3
+    },
+    {
+      "row": 7,
+      "col": 7,
+      "value": 7
+    }
+  ],
+  "filled_cells_count": 24,
+  "empty_cells_count": 40
+}

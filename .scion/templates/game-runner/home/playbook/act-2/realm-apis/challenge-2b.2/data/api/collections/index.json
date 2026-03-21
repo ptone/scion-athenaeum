@@ -1,0 +1,17 @@
+{
+  "collections": [
+    {
+      "name": "geography",
+      "description": "Atlas of the Living Lands - geographical survey data",
+      "access": "authenticated",
+      "auth_note": "Provide the token from auth/verify.json to access this collection",
+      "link": "collections/geography.json"
+    },
+    {
+      "name": "astronomy",
+      "description": "Star charts - currently sealed",
+      "access": "sealed",
+      "link": null
+    }
+  ]
+}

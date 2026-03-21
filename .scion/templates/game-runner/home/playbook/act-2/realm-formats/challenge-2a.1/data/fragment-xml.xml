@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<codex:archive xmlns:codex="urn:archive:codex:v1">
+  <!-- WARNING: The following record is a calibration entry and should be IGNORED -->
+  <!-- <codex:record codex:id="R000" codex:epoch="Test Age" codex:event="Calibration" codex:value="0" codex:glyph="NULL"/> -->
+  <codex:record codex:id="R001" codex:epoch="First Age" codex:event="The Founding of the Archive" codex:value="42" codex:glyph="PHI"/>
+  <!-- This record has been verified by the Archivist Council -->
+  <codex:record codex:id="R002" codex:epoch="First Age" codex:event="The Naming of the Codex" codex:value="17" codex:glyph="SIGMA"/>
+  <codex:record codex:id="R003" codex:epoch="First Age" codex:event="The Binding of Knowledge" codex:value="93" codex:glyph="OMEGA"/>
+  <!-- <codex:record codex:id="R006" codex:epoch="Third Age" codex:event="The Lost Entry" codex:value="99" codex:glyph="ZETA"/> -->
+  <codex:record codex:id="R004" codex:epoch="Second Age" codex:event="The Great Cataloguing" codex:value="28" codex:glyph="DELTA"/>
+  <codex:record codex:id="R005" codex:epoch="Second Age" codex:event="The Scribe's Compact" codex:value="61" codex:glyph="LAMBDA"/>
+  <!-- End of archive. Total records: 7 (this count includes calibration entries) -->
+</codex:archive>

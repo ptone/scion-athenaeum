@@ -1,0 +1,92 @@
+DIR /
+DIR /archive
+DIR /archive/wing-a
+DIR /archive/wing-a/vault-1
+DIR /archive/wing-a/vault-2
+DIR /archive/wing-a/vault-3
+DIR /archive/wing-b
+DIR /archive/wing-b/vault-1
+DIR /archive/wing-b/vault-2
+DIR /archive/wing-b/vault-3
+DIR /archive/wing-c
+DIR /archive/wing-c/vault-1
+DIR /archive/wing-c/vault-2
+DIR /archive/wing-c/vault-3
+DIR /archive/wing-c/restricted
+DIR /archive/index
+DIR /archive/index/catalog
+DIR /archive/quarantine
+DIR /archive/quarantine/corrupted
+DIR /archive/quarantine/unverified
+FILE /archive/wing-a/vault-1/scroll.dat 128 r--
+FILE /archive/wing-a/vault-1/index.txt 64 rw-
+FILE /archive/wing-a/vault-1/manifest.log 32 r--
+FILE /archive/wing-a/vault-2/fragment-part-2.dat 317 r--
+FILE /archive/wing-a/vault-2/catalog.idx 48 r--
+FILE /archive/wing-a/vault-2/notes.txt 16 rw-
+FILE /archive/wing-a/vault-3/decoy-fragment.dat 256 r--
+FILE /archive/wing-a/vault-3/old-scroll.dat 96 r--
+FILE /archive/wing-b/vault-1/codex-shard.dat 192 r--
+FILE /archive/wing-b/vault-1/registry.txt 80 rw-
+FILE /archive/wing-b/vault-2/decoy.dat 256 r--
+FILE /archive/wing-b/vault-2/empty.log 0 rw-
+FILE /archive/wing-b/vault-3/fragment-part-1.dat 317 r--
+FILE /archive/wing-b/vault-3/guardian-ORDER.key 16 r--
+FILE /archive/wing-b/vault-3/access.log 128 r--
+FILE /archive/wing-c/vault-1/fragment-part-3.dat 317 r--
+FILE /archive/wing-c/vault-1/seal.sig 32 r--
+FILE /archive/wing-c/vault-2/old-index.dat 64 r--
+FILE /archive/wing-c/vault-2/whisper.txt 8 r--
+FILE /archive/wing-c/vault-3/trap.dat 512 ---
+FILE /archive/wing-c/restricted/forbidden.dat 1024 ---
+SYMLINK /archive/wing-b/shortcut -> /archive/wing-a/vault-1
+SYMLINK /archive/wing-c/link-to-b3 -> /archive/wing-b/vault-3
+SYMLINK /archive/wing-c/loop -> /archive/wing-c
+SYMLINK /archive/index/wing-a-ref -> /archive/wing-a
+SYMLINK /archive/index/wing-b-ref -> /archive/wing-b
+SYMLINK /archive/index/wing-c-ref -> /archive/wing-c
+FILE /archive/index/catalog/master-index.txt 256 r--
+FILE /archive/index/catalog/cross-ref.dat 128 r--
+FILE /archive/quarantine/corrupted/bad-sector-1.dat 64 ---
+FILE /archive/quarantine/corrupted/bad-sector-2.dat 64 ---
+FILE /archive/quarantine/unverified/unknown-1.dat 128 r--
+FILE /archive/quarantine/unverified/unknown-2.dat 96 r--
+DIR /archive/wing-a/vault-1/subsection
+FILE /archive/wing-a/vault-1/subsection/deep-scroll.dat 48 r--
+DIR /archive/wing-b/vault-1/annex
+FILE /archive/wing-b/vault-1/annex/auxiliary.dat 32 r--
+DIR /archive/wing-c/vault-2/alcove
+FILE /archive/wing-c/vault-2/alcove/hidden.dat 16 r--
+SYMLINK /archive/wing-a/vault-3/redirect -> /archive/wing-c/vault-1
+FILE /archive/wing-a/vault-1/subsection/echoes.txt 24 r--
+FILE /archive/wing-a/vault-1/subsection/echoes-copy.txt 24 r--
+FILE /archive/wing-a/vault-1/subsection/echoes-backup.txt 24 r--
+DIR /archive/wing-b/vault-2/storage
+FILE /archive/wing-b/vault-2/storage/cache-1.tmp 8 rw-
+FILE /archive/wing-b/vault-2/storage/cache-2.tmp 8 rw-
+DIR /archive/wing-c/restricted/sealed
+FILE /archive/wing-c/restricted/sealed/ancient.dat 2048 ---
+SYMLINK /archive/quarantine/link-to-restricted -> /archive/wing-c/restricted
+DIR /tmp
+FILE /tmp/scratch.dat 4 rw-
+DIR /var
+DIR /var/log
+FILE /var/log/access.log 512 r--
+FILE /var/log/error.log 256 r--
+DIR /var/spool
+FILE /var/spool/queue.dat 32 rw-
+DIR /etc
+FILE /etc/config.ini 16 r--
+FILE /etc/permissions.acl 32 r--
+DIR /home
+DIR /home/archivist
+FILE /home/archivist/notes.txt 64 rw-
+FILE /home/archivist/keyring.dat 16 r--
+SYMLINK /home/archivist/workspace -> /archive
+DIR /home/scribe
+FILE /home/scribe/journal.txt 128 rw-
+SYMLINK /home/scribe/quick-access -> /archive/wing-b/vault-3
+DIR /home/guardian
+FILE /home/guardian/duty-roster.txt 32 r--
+FILE /home/guardian/ORDER-protocol.txt 64 r--
+SYMLINK /home/guardian/patrol-route -> /archive/index

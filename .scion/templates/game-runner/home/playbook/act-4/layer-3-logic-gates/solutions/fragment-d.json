@@ -1,0 +1,43 @@
+{
+  "fragment_id": "D",
+  "sequence_number": 4,
+  "realm_origin": "The Deep Archive",
+  "version": "1.0",
+  "anchor_points": {},
+  "content": {
+    "title": "Canticles of Form and Void",
+    "domain": "arts",
+    "records": [
+      {
+        "id": "A001",
+        "form": "The Architecture of Thought",
+        "medium": "crystallized logic",
+        "resonance": 144
+      },
+      {
+        "id": "A002",
+        "form": "The Symphony of Sorts",
+        "medium": "algorithmic harmony",
+        "resonance": 89
+      },
+      {
+        "id": "A003",
+        "form": "The Mosaic of Maps",
+        "medium": "fractal cartography",
+        "resonance": 233
+      },
+      {
+        "id": "A004",
+        "form": "The Poetry of Proofs",
+        "medium": "formal verse",
+        "resonance": 55
+      },
+      {
+        "id": "A005",
+        "form": "The Dance of Data",
+        "medium": "streaming motion",
+        "resonance": 377
+      }
+    ]
+  }
+}

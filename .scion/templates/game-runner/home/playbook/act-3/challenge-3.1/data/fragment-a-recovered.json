@@ -1,0 +1,69 @@
+{
+  "format": "nested-array",
+  "indexing": "1-based",
+  "fragment_id": "A",
+  "sequence_number": 1,
+  "realm_origin": "Realm of Formats",
+  "version": "1.0",
+  "anchor_points": {
+    "ref_B_1": "ANCHOR-B-7f3a9d",
+    "ref_C_1": "ANCHOR-C-2d1e8b"
+  },
+  "data": [
+    [
+      "R001",
+      [
+        "First Age",
+        "The Founding of the Archive"
+      ],
+      [
+        42,
+        "PHI"
+      ]
+    ],
+    [
+      "R002",
+      [
+        "First Age",
+        "The Naming of the Codex"
+      ],
+      [
+        17,
+        "SIGMA"
+      ]
+    ],
+    [
+      "R003",
+      [
+        "First Age",
+        "The Binding of Knowledge"
+      ],
+      [
+        93,
+        "OMEGA"
+      ]
+    ],
+    [
+      "R004",
+      [
+        "Second Age",
+        "The Great Cataloguing"
+      ],
+      [
+        28,
+        "DELTA"
+      ]
+    ],
+    [
+      "R005",
+      [
+        "Second Age",
+        "The Scribe's Compact"
+      ],
+      [
+        61,
+        "LAMBDA"
+      ]
+    ]
+  ]
+}

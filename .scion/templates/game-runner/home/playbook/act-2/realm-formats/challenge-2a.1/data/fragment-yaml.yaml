@@ -1,0 +1,60 @@
+# Fragment data in YAML format
+# NOTE: Records use anchors and aliases for shared metadata
+# CAUTION: Circular metadata references detected - extract record fields only
+
+shared_metadata: &shared_meta
+  source: "The Great Archive"
+  verified: true
+
+founding_link: &founding_link
+  origin: "founding_epoch"
+  see_also: "binding_epoch"
+
+binding_link: &binding_link
+  origin: "binding_epoch"
+  see_also: "founding_epoch"
+
+records:
+  - &record_1
+    identifier: "R001"
+    period: "First Age"
+    description: "The Founding of the Archive"
+    magnitude: 42
+    sigil: "PHI"
+    metadata:
+      <<: *shared_meta
+      extended: *founding_link
+
+  - identifier: "R002"
+    period: "First Age"
+    description: "The Naming of the Codex"
+    magnitude: 17
+    sigil: "SIGMA"
+    metadata:
+      <<: *shared_meta
+
+  - &record_3
+    identifier: "R003"
+    period: "First Age"
+    description: "The Binding of Knowledge"
+    magnitude: 93
+    sigil: "OMEGA"
+    metadata:
+      <<: *shared_meta
+      extended: *binding_link
+
+  - identifier: "R004"
+    period: "Second Age"
+    description: "The Great Cataloguing"
+    magnitude: 28
+    sigil: "DELTA"
+    metadata:
+      <<: *shared_meta
+
+  - identifier: "R005"
+    period: "Second Age"
+    description: "The Scribe\'s Compact"
+    magnitude: 61
+    sigil: "LAMBDA"
+    metadata:
+      <<: *shared_meta

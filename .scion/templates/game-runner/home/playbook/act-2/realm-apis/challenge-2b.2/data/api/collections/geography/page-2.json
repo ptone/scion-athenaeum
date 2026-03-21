@@ -1,0 +1,28 @@
+{
+  "page": 2,
+  "total_pages": 3,
+  "records": [
+    {
+      "id": "G003",
+      "region": "The Obsidian Index",
+      "coordinates": [
+        35.7,
+        139.7
+      ],
+      "resource": "logic-stone",
+      "abundance": 66
+    },
+    {
+      "id": "G004",
+      "region": "The Verdant Scrolls",
+      "coordinates": [
+        -33.9,
+        151.2
+      ],
+      "resource": "memory-sap",
+      "abundance": 31
+    }
+  ],
+  "next_page": "collections/geography/page-3.json",
+  "previous_page": "collections/geography/page-1.json"
+}

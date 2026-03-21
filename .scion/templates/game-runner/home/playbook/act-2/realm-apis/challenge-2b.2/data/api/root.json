@@ -1,0 +1,10 @@
+{
+  "api_version": "1.0",
+  "name": "The Archive API",
+  "description": "Welcome to the Archive's data repository. Navigate the collections to find what you seek.",
+  "notice": "Authentication required. Use the passphrase from the Archive Index to proceed.",
+  "links": {
+    "auth": "auth/verify.json",
+    "collections": "collections/index.json"
+  }
+}

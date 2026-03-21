@@ -1,0 +1,62 @@
+{
+  "fragment_id": "C",
+  "sequence_number": 3,
+  "realm_origin": "Realm of Patterns",
+  "version": "1.0",
+  "anchor_points": {
+    "ref_A_1": "ANCHOR-A-3f7b4c",
+    "ref_B_1": "ANCHOR-B-1a6e5d"
+  },
+  "content": {
+    "title": "Theorems of the Eternal Pattern",
+    "domain": "mathematics",
+    "records": [
+      {
+        "id": "T001",
+        "theorem": "The Recursion Principle",
+        "proof_hash": "a1b2c3d4",
+        "dependencies": [
+          "T003"
+        ],
+        "complexity": 7
+      },
+      {
+        "id": "T002",
+        "theorem": "The Binding Lemma",
+        "proof_hash": "e5f6a7b8",
+        "dependencies": [],
+        "complexity": 3
+      },
+      {
+        "id": "T003",
+        "theorem": "The Convergence Theorem",
+        "proof_hash": "c9d0e1f2",
+        "dependencies": [
+          "T002"
+        ],
+        "complexity": 9
+      },
+      {
+        "id": "T004",
+        "theorem": "The Partition Identity",
+        "proof_hash": "a3b4c5d6",
+        "dependencies": [
+          "T001",
+          "T002"
+        ],
+        "complexity": 5
+      },
+      {
+        "id": "T005",
+        "theorem": "The Completeness Axiom",
+        "proof_hash": "e7f8a9b0",
+        "dependencies": [
+          "T003",
+          "T004"
+        ],
+        "complexity": 11
+      }
+    ]
+  },
+  "checksum": "sha256:4ec1a54fde68113539e9462c31445d91016f32f90f7a1ad265cf1f355cecf0e5"
+}

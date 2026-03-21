@@ -1,0 +1,35 @@
+{
+  "description": "Integrity verification manifest for Fragment A records",
+  "verification_scheme": "SHA-256 checksum of canonical JSON (keys sorted, no whitespace)",
+  "redundancy_scheme": "Each record's value field can be recovered by XORing the xor_result with the partner record's value",
+  "checksums": {
+    "R001": "f4788c541db9872d47efa3c9f923561c3737beca4350e653d7544a8347c78f72",
+    "R002": "a70bb00a7ac7b5edb175de1f06447b22e024192c7d05ba0d2aa337571f712301",
+    "R003": "bef4328c64f79582e048e327beeb39f98ad6245652aca94692a885613e75a1f4",
+    "R004": "d0b2ee54a98cad9c87242e46c59971bc92815fe3c819d530040a534cbb842f72",
+    "R005": "48317b2966ca2c59257e89e1a4927cb3968d625bc4b5d04acf14b5d65789c1fd"
+  },
+  "redundancy_codes": {
+    "R001": {
+      "xor_partner": "R002",
+      "xor_result": 59
+    },
+    "R002": {
+      "xor_partner": "R001",
+      "xor_result": 59
+    },
+    "R003": {
+      "xor_partner": "R004",
+      "xor_result": 65
+    },
+    "R004": {
+      "xor_partner": "R003",
+      "xor_result": 65
+    },
+    "R005": {
+      "xor_partner": "R001",
+      "xor_result": 23
+    }
+  },
+  "known_issues": "Two records may have been corrupted during the unification process. Use checksums to identify them, then use redundancy codes to repair."
+}

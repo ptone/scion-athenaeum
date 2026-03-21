@@ -1,0 +1,43 @@
+{
+  "fragment_id": "E",
+  "sequence_number": 5,
+  "realm_origin": "The Deep Archive",
+  "version": "1.0",
+  "anchor_points": {},
+  "content": {
+    "title": "The Covenant of Unified Knowledge",
+    "domain": "governance",
+    "records": [
+      {
+        "id": "L001",
+        "law": "The Principle of Open Access",
+        "precedent": "First Age, Cycle 7",
+        "binding": true
+      },
+      {
+        "id": "L002",
+        "law": "The Rule of Redundancy",
+        "precedent": "First Age, Cycle 12",
+        "binding": true
+      },
+      {
+        "id": "L003",
+        "law": "The Directive of Distributed Trust",
+        "precedent": "Second Age, Cycle 3",
+        "binding": true
+      },
+      {
+        "id": "L004",
+        "law": "The Mandate of Immutable Record",
+        "precedent": "Second Age, Cycle 8",
+        "binding": true
+      },
+      {
+        "id": "L005",
+        "law": "The Oath of the Final Assembly",
+        "precedent": "Third Age, Cycle 1",
+        "binding": true
+      }
+    ]
+  }
+}

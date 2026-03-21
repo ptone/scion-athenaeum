@@ -1,0 +1,5 @@
+R001First Age   The Founding of the Archive           42PHI     
+R002First Age   The Naming of the Codex               17SIGMA   
+R003First Age   The Binding of Knowledge              93OMEGA   
+R004Second Age  The Great Cataloguing                 28DELTA   
+R005Second Age  The Scribe's Compact                  61LAMBDA  

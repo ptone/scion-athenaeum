@@ -1,0 +1,9 @@
+{
+  "authentication": {
+    "method": "passphrase",
+    "required_key": "FRAGMENT",
+    "instructions": "If your passphrase matches the required_key, you are granted access. Use the token below for authenticated endpoints."
+  },
+  "token": "eyJ0eXAiOiAiSldUIiwgImFsZyI6ICJub25lIn0.eyJhY2Nlc3MiOiAiZ3JhbnRlZCIsICJ0b2tlbiI6ICJBUkNISVZFLUItMjAyNiJ9.",
+  "status": "Access will be granted upon passphrase verification"
+}

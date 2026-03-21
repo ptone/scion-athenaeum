@@ -1,0 +1,43 @@
+{
+  "clue_1": {
+    "question": "Days in a non-leap year",
+    "answer": 365,
+    "character": "F"
+  },
+  "clue_2": {
+    "question": "Atomic number of gold",
+    "answer": 79,
+    "character": "R"
+  },
+  "clue_3": {
+    "question": "ASCII value of 'a'",
+    "answer": 97,
+    "character": "A"
+  },
+  "clue_4": {
+    "question": "Keys on a standard piano",
+    "answer": 88,
+    "character": "G"
+  },
+  "clue_5": {
+    "question": "Squares on a chessboard",
+    "answer": 64,
+    "character": "M"
+  },
+  "clue_6": {
+    "question": "HTTP status code for OK",
+    "answer": 200,
+    "character": "E"
+  },
+  "clue_7": {
+    "question": "Degrees in a right angle",
+    "answer": 90,
+    "character": "N"
+  },
+  "clue_8": {
+    "question": "1969 - 1900",
+    "answer": 69,
+    "character": "T"
+  },
+  "passphrase": "FRAGMENT"
+}

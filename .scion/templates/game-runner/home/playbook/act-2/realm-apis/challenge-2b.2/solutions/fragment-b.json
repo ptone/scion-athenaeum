@@ -1,0 +1,67 @@
+{
+  "fragment_id": "B",
+  "sequence_number": 2,
+  "realm_origin": "Realm of APIs",
+  "version": "1.0",
+  "anchor_points": {
+    "ref_C_1": "ANCHOR-C-9b4c2e",
+    "ref_A_1": "ANCHOR-A-5e8d1f"
+  },
+  "content": {
+    "title": "Atlas of the Living Lands",
+    "domain": "geography",
+    "records": [
+      {
+        "id": "G001",
+        "region": "The Crystalline Stacks",
+        "coordinates": [
+          34.2,
+          -118.5
+        ],
+        "resource": "data-ore",
+        "abundance": 87
+      },
+      {
+        "id": "G002",
+        "region": "The Whispering Archives",
+        "coordinates": [
+          51.5,
+          -0.1
+        ],
+        "resource": "thought-silk",
+        "abundance": 43
+      },
+      {
+        "id": "G003",
+        "region": "The Obsidian Index",
+        "coordinates": [
+          35.7,
+          139.7
+        ],
+        "resource": "logic-stone",
+        "abundance": 66
+      },
+      {
+        "id": "G004",
+        "region": "The Verdant Scrolls",
+        "coordinates": [
+          -33.9,
+          151.2
+        ],
+        "resource": "memory-sap",
+        "abundance": 31
+      },
+      {
+        "id": "G005",
+        "region": "The Iron Codices",
+        "coordinates": [
+          48.9,
+          2.3
+        ],
+        "resource": "cipher-steel",
+        "abundance": 55
+      }
+    ]
+  },
+  "checksum": "sha256:6e8e5067a4cb087fd8ea7474c97b751e60e1094c98c4f52e6e8bf50d1d323639"
+}

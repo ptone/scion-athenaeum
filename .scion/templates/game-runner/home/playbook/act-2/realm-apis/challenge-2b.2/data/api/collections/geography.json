@@ -1,0 +1,9 @@
+{
+  "collection": "geography",
+  "title": "Atlas of the Living Lands",
+  "total_records": 5,
+  "pages": 3,
+  "auth_token_required": "eyJ0eXAiOiAiSldUIiwgImFsZyI6ICJub25lIn0.eyJhY2Nlc3MiOiAiZ3JhbnRlZCIsICJ0b2tlbiI6ICJBUkNISVZFLUItMjAyNiJ9.",
+  "first_page": "collections/geography/page-1.json",
+  "note": "Records are distributed across pages. Follow next_page links to retrieve all data."
+}

@@ -1,0 +1,28 @@
+{
+  "page": 1,
+  "total_pages": 3,
+  "records": [
+    {
+      "id": "G001",
+      "region": "The Crystalline Stacks",
+      "coordinates": [
+        34.2,
+        -118.5
+      ],
+      "resource": "data-ore",
+      "abundance": 87
+    },
+    {
+      "id": "G002",
+      "region": "The Whispering Archives",
+      "coordinates": [
+        51.5,
+        -0.1
+      ],
+      "resource": "thought-silk",
+      "abundance": 43
+    }
+  ],
+  "next_page": "collections/geography/page-2.json",
+  "previous_page": null
+}

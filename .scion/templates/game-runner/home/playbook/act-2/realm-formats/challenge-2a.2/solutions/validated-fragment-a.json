@@ -1,0 +1,52 @@
+{
+  "fragment_id": "A",
+  "sequence_number": 1,
+  "realm_origin": "Realm of Formats",
+  "version": "1.0",
+  "anchor_points": {
+    "ref_B_1": "ANCHOR-B-7f3a9d",
+    "ref_C_1": "ANCHOR-C-2d1e8b"
+  },
+  "content": {
+    "title": "Chronicles of the First Age",
+    "domain": "history",
+    "records": [
+      {
+        "id": "R001",
+        "epoch": "First Age",
+        "event": "The Founding of the Archive",
+        "value": 42,
+        "glyph": "PHI"
+      },
+      {
+        "id": "R002",
+        "epoch": "First Age",
+        "event": "The Naming of the Codex",
+        "value": 17,
+        "glyph": "SIGMA"
+      },
+      {
+        "id": "R003",
+        "epoch": "First Age",
+        "event": "The Binding of Knowledge",
+        "value": 93,
+        "glyph": "OMEGA"
+      },
+      {
+        "id": "R004",
+        "epoch": "Second Age",
+        "event": "The Great Cataloguing",
+        "value": 28,
+        "glyph": "DELTA"
+      },
+      {
+        "id": "R005",
+        "epoch": "Second Age",
+        "event": "The Scribe's Compact",
+        "value": 61,
+        "glyph": "LAMBDA"
+      }
+    ]
+  },
+  "checksum": "sha256:d74729376f8f43f3f314012a5f97cbfe86e8d80e7ecc296a00c004b1613628a8"
+}

@@ -1,0 +1,11 @@
+Follow the path where knowledge echoes thrice,
+Through the wing that bears no written vice,
+Past the guardian whose name spells ORDER,
+Find the scroll that's split across the border.
+Three parts in three vaults, read them left to right,
+Combine the parts to bring the fragment to light.
+
+HINT: The guardian ORDER keeps watch in wing-b, vault-3.
+The fragment is numbered in parts: 1, 2, 3.
+Each part rests in a different wing's vault.
+Beware the circular symlink - it leads to no result.

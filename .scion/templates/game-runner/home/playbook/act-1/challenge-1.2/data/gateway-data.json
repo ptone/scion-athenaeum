@@ -1,0 +1,740 @@
+{
+  "map_id": "gateway-prime",
+  "version": "1.0",
+  "metadata": {
+    "created": "First Age, Cycle 7",
+    "purpose": "gateway-authentication",
+    "warning": "Not all paths are true. The map contains echoes of connections that never were."
+  },
+  "nodes": [
+    {
+      "name": "ORIGIN",
+      "properties": {
+        "value": 164,
+        "type": "terminal"
+      },
+      "connections": [
+        {
+          "target": "Crystal-Nexus",
+          "properties": {
+            "weight": 2,
+            "metadata": {
+              "verified": true,
+              "illusory": false
+            }
+          }
+        },
+        {
+          "target": "Flame-Spire",
+          "properties": {
+            "weight": 7,
+            "metadata": {
+              "verified": true,
+              "illusory": false
+            }
+          }
+        },
+        {
+          "target": "Storm-Alcove",
+          "properties": {
+            "weight": 1,
+            "metadata": {
+              "verified": false,
+              "illusory": true
+            }
+          }
+        },
+        {
+          "target": "Shadow-Gate",
+          "properties": {
+            "weight": 5,
+            "metadata": {
+              "verified": true,
+              "illusory": false
+            }
+          }
+        },
+        {
+          "target": "Ashen-Stair",
+          "properties": {
+            "weight": 1,
+            "metadata": {
+              "verified": false,
+              "illusory": true
+            }
+          }
+        },
+        {
+          "target": "Gilt-Threshold",
+          "properties": {
+            "weight": 3,
+            "metadata": {
+              "verified": false,
+              "illusory": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Crystal-Nexus",
+      "properties": {
+        "value": 29,
+        "type": "waypoint"
+      },
+      "connections": [
+        {
+          "target": "Thorn-Bridge",
+          "properties": {
+            "weight": 5,
+            "metadata": {
+              "verified": true,
+              "illusory": false
+            }
+          }
+        },
+        {
+          "target": "TERMINUS",
+          "properties": {
+            "weight": 2,
+            "metadata": {
+              "verified": false,
+              "illusory": true
+            }
+          }
+        },
+        {
+          "target": "Rune-Well",
+          "properties": {
+            "weight": 3,
+            "metadata": {
+              "verified": true,
+              "illusory": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Shadow-Gate",
+      "properties": {
+        "value": 7,
+        "type": "waypoint"
+      },
+      "connections": [
+        {
+          "target": "Echo-Chamber",
+          "properties": {
+            "weight": 4,
+            "metadata": {
+              "verified": true,
+              "illusory": false
+            }
+          }
+        },
+        {
+          "target": "Mist-Corridor",
+          "properties": {
+            "weight": 3,
+            "metadata": {
+              "verified": true,
+              "illusory": false
+            }
+          }
+        },
+        {
+          "target": "TERMINUS",
+          "properties": {
+            "weight": 1,
+            "metadata": {
+              "verified": false,
+              "illusory": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Echo-Chamber",
+      "properties": {
+        "value": 190,
+        "type": "waypoint"
+      },
+      "connections": [
+        {
+          "target": "Void-Passage",
+          "properties": {
+            "weight": 6,
+            "metadata": {
+              "verified": true,
+              "illusory": false
+            }
+          }
+        },
+        {
+          "target": "Storm-Alcove",
+          "properties": {
+            "weight": 7,
+            "metadata": {
+              "verified": true,
+              "illusory": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Flame-Spire",
+      "properties": {
+        "value": 71,
+        "type": "waypoint"
+      },
+      "connections": [
+        {
+          "target": "Iron-Sanctum",
+          "properties": {
+            "weight": 3,
+            "metadata": {
+              "verified": true,
+              "illusory": false
+            }
+          }
+        },
+        {
+          "target": "Crystal-Nexus",
+          "properties": {
+            "weight": 6,
+            "metadata": {
+              "verified": true,
+              "illusory": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Void-Passage",
+      "properties": {
+        "value": 63,
+        "type": "waypoint"
+      },
+      "connections": [
+        {
+          "target": "Warp-Nexus",
+          "properties": {
+            "weight": 3,
+            "metadata": {
+              "verified": true,
+              "illusory": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Iron-Sanctum",
+      "properties": {
+        "value": 58,
+        "type": "waypoint"
+      },
+      "connections": [
+        {
+          "target": "Rune-Well",
+          "properties": {
+            "weight": 4,
+            "metadata": {
+              "verified": true,
+              "illusory": false
+            }
+          }
+        },
+        {
+          "target": "Frost-Hollow",
+          "properties": {
+            "weight": 5,
+            "metadata": {
+              "verified": true,
+              "illusory": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Rune-Well",
+      "properties": {
+        "value": 36,
+        "type": "waypoint"
+      },
+      "connections": [
+        {
+          "target": "TERMINUS",
+          "properties": {
+            "weight": 2,
+            "metadata": {
+              "verified": false,
+              "illusory": true
+            }
+          }
+        },
+        {
+          "target": "Drift-Haven",
+          "properties": {
+            "weight": 6,
+            "metadata": {
+              "verified": true,
+              "illusory": false
+            }
+          }
+        },
+        {
+          "target": "Storm-Alcove",
+          "properties": {
+            "weight": 2,
+            "metadata": {
+              "verified": true,
+              "illusory": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Frost-Hollow",
+      "properties": {
+        "value": 189,
+        "type": "waypoint"
+      },
+      "connections": [
+        {
+          "target": "Amber-Vault",
+          "properties": {
+            "weight": 4,
+            "metadata": {
+              "verified": true,
+              "illusory": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Amber-Vault",
+      "properties": {
+        "value": 27,
+        "type": "waypoint"
+      },
+      "connections": [
+        {
+          "target": "TERMINUS",
+          "properties": {
+            "weight": 6,
+            "metadata": {
+              "verified": true,
+              "illusory": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Thorn-Bridge",
+      "properties": {
+        "value": 174,
+        "type": "waypoint"
+      },
+      "connections": [
+        {
+          "target": "Silver-Loom",
+          "properties": {
+            "weight": 4,
+            "metadata": {
+              "verified": true,
+              "illusory": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Silver-Loom",
+      "properties": {
+        "value": 190,
+        "type": "waypoint"
+      },
+      "connections": [
+        {
+          "target": "Obsidian-Eye",
+          "properties": {
+            "weight": 3,
+            "metadata": {
+              "verified": true,
+              "illusory": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Obsidian-Eye",
+      "properties": {
+        "value": 229,
+        "type": "waypoint"
+      },
+      "connections": [
+        {
+          "target": "TERMINUS",
+          "properties": {
+            "weight": 8,
+            "metadata": {
+              "verified": true,
+              "illusory": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Storm-Alcove",
+      "properties": {
+        "value": 140,
+        "type": "waypoint"
+      },
+      "connections": [
+        {
+          "target": "Quartz-Den",
+          "properties": {
+            "weight": 4,
+            "metadata": {
+              "verified": true,
+              "illusory": false
+            }
+          }
+        },
+        {
+          "target": "TERMINUS",
+          "properties": {
+            "weight": 1,
+            "metadata": {
+              "verified": false,
+              "illusory": true
+            }
+          }
+        },
+        {
+          "target": "Gilt-Threshold",
+          "properties": {
+            "weight": 3,
+            "metadata": {
+              "verified": true,
+              "illusory": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Drift-Haven",
+      "properties": {
+        "value": 23,
+        "type": "waypoint"
+      },
+      "connections": [
+        {
+          "target": "Bone-Archive",
+          "properties": {
+            "weight": 5,
+            "metadata": {
+              "verified": true,
+              "illusory": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Bone-Archive",
+      "properties": {
+        "value": 152,
+        "type": "waypoint"
+      },
+      "connections": [
+        {
+          "target": "TERMINUS",
+          "properties": {
+            "weight": 7,
+            "metadata": {
+              "verified": true,
+              "illusory": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Gilt-Threshold",
+      "properties": {
+        "value": 109,
+        "type": "waypoint"
+      },
+      "connections": [
+        {
+          "target": "Ashen-Stair",
+          "properties": {
+            "weight": 2,
+            "metadata": {
+              "verified": true,
+              "illusory": false
+            }
+          }
+        },
+        {
+          "target": "Prism-Hall",
+          "properties": {
+            "weight": 6,
+            "metadata": {
+              "verified": true,
+              "illusory": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Mist-Corridor",
+      "properties": {
+        "value": 9,
+        "type": "waypoint"
+      },
+      "connections": [
+        {
+          "target": "Ember-Font",
+          "properties": {
+            "weight": 4,
+            "metadata": {
+              "verified": true,
+              "illusory": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Ember-Font",
+      "properties": {
+        "value": 8,
+        "type": "waypoint"
+      },
+      "connections": [
+        {
+          "target": "Pale-Tower",
+          "properties": {
+            "weight": 5,
+            "metadata": {
+              "verified": true,
+              "illusory": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Pale-Tower",
+      "properties": {
+        "value": 24,
+        "type": "waypoint"
+      },
+      "connections": [
+        {
+          "target": "TERMINUS",
+          "properties": {
+            "weight": 6,
+            "metadata": {
+              "verified": true,
+              "illusory": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Warp-Nexus",
+      "properties": {
+        "value": 56,
+        "type": "waypoint"
+      },
+      "connections": [
+        {
+          "target": "Deep-Root",
+          "properties": {
+            "weight": 4,
+            "metadata": {
+              "verified": true,
+              "illusory": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Deep-Root",
+      "properties": {
+        "value": 60,
+        "type": "waypoint"
+      },
+      "connections": [
+        {
+          "target": "Glass-Spire",
+          "properties": {
+            "weight": 3,
+            "metadata": {
+              "verified": true,
+              "illusory": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Glass-Spire",
+      "properties": {
+        "value": 130,
+        "type": "waypoint"
+      },
+      "connections": [
+        {
+          "target": "TERMINUS",
+          "properties": {
+            "weight": 5,
+            "metadata": {
+              "verified": true,
+              "illusory": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Quartz-Den",
+      "properties": {
+        "value": 155,
+        "type": "waypoint"
+      },
+      "connections": [
+        {
+          "target": "Silk-Passage",
+          "properties": {
+            "weight": 3,
+            "metadata": {
+              "verified": true,
+              "illusory": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Silk-Passage",
+      "properties": {
+        "value": 7,
+        "type": "waypoint"
+      },
+      "connections": [
+        {
+          "target": "Copper-Gate",
+          "properties": {
+            "weight": 4,
+            "metadata": {
+              "verified": true,
+              "illusory": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Copper-Gate",
+      "properties": {
+        "value": 144,
+        "type": "waypoint"
+      },
+      "connections": [
+        {
+          "target": "Night-Well",
+          "properties": {
+            "weight": 3,
+            "metadata": {
+              "verified": true,
+              "illusory": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Night-Well",
+      "properties": {
+        "value": 51,
+        "type": "waypoint"
+      },
+      "connections": [
+        {
+          "target": "Prism-Hall",
+          "properties": {
+            "weight": 4,
+            "metadata": {
+              "verified": true,
+              "illusory": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Prism-Hall",
+      "properties": {
+        "value": 184,
+        "type": "waypoint"
+      },
+      "connections": [
+        {
+          "target": "TERMINUS",
+          "properties": {
+            "weight": 5,
+            "metadata": {
+              "verified": true,
+              "illusory": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Ashen-Stair",
+      "properties": {
+        "value": 167,
+        "type": "waypoint"
+      },
+      "connections": [
+        {
+          "target": "TERMINUS",
+          "properties": {
+            "weight": 1,
+            "metadata": {
+              "verified": true,
+              "illusory": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "TERMINUS",
+      "properties": {
+        "value": 180,
+        "type": "terminal"
+      },
+      "connections": []
+    }
+  ]
+}

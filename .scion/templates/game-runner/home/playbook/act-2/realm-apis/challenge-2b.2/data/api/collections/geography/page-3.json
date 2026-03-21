@@ -1,0 +1,18 @@
+{
+  "page": 3,
+  "total_pages": 3,
+  "records": [
+    {
+      "id": "G005",
+      "region": "The Iron Codices",
+      "coordinates": [
+        48.9,
+        2.3
+      ],
+      "resource": "cipher-steel",
+      "abundance": 55
+    }
+  ],
+  "next_page": null,
+  "previous_page": "collections/geography/page-2.json"
+}

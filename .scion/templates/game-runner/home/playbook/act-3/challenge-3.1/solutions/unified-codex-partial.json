@@ -1,0 +1,213 @@
+{
+  "codex_partial": {
+    "fragments_unified": 3,
+    "fragments_remaining": 2,
+    "fragments": [
+      {
+        "fragment_id": "A",
+        "sequence_number": 1,
+        "realm_origin": "Realm of Formats",
+        "version": "1.0",
+        "anchor_points": {
+          "ref_B_1": "ANCHOR-B-7f3a9d",
+          "ref_C_1": "ANCHOR-C-2d1e8b"
+        },
+        "content": {
+          "title": "Chronicles of the First Age",
+          "domain": "history",
+          "records": [
+            {
+              "id": "R001",
+              "epoch": "First Age",
+              "event": "The Founding of the Archive",
+              "value": 42,
+              "glyph": "PHI"
+            },
+            {
+              "id": "R002",
+              "epoch": "First Age",
+              "event": "The Naming of the Codex",
+              "value": 17,
+              "glyph": "SIGMA"
+            },
+            {
+              "id": "R003",
+              "epoch": "First Age",
+              "event": "The Binding of Knowledge",
+              "value": 93,
+              "glyph": "OMEGA"
+            },
+            {
+              "id": "R004",
+              "epoch": "Second Age",
+              "event": "The Great Cataloguing",
+              "value": 28,
+              "glyph": "DELTA"
+            },
+            {
+              "id": "R005",
+              "epoch": "Second Age",
+              "event": "The Scribe's Compact",
+              "value": 61,
+              "glyph": "LAMBDA"
+            }
+          ]
+        }
+      },
+      {
+        "fragment_id": "B",
+        "sequence_number": 2,
+        "realm_origin": "Realm of APIs",
+        "version": "1.0",
+        "anchor_points": {
+          "ref_C_1": "ANCHOR-C-9b4c2e",
+          "ref_A_1": "ANCHOR-A-5e8d1f"
+        },
+        "content": {
+          "title": "Atlas of the Living Lands",
+          "domain": "geography",
+          "records": [
+            {
+              "id": "G001",
+              "region": "The Crystalline Stacks",
+              "coordinates": [
+                34.2,
+                -118.5
+              ],
+              "resource": "data-ore",
+              "abundance": 87
+            },
+            {
+              "id": "G002",
+              "region": "The Whispering Archives",
+              "coordinates": [
+                51.5,
+                -0.1
+              ],
+              "resource": "thought-silk",
+              "abundance": 43
+            },
+            {
+              "id": "G003",
+              "region": "The Obsidian Index",
+              "coordinates": [
+                35.7,
+                139.7
+              ],
+              "resource": "logic-stone",
+              "abundance": 66
+            },
+            {
+              "id": "G004",
+              "region": "The Verdant Scrolls",
+              "coordinates": [
+                -33.9,
+                151.2
+              ],
+              "resource": "memory-sap",
+              "abundance": 31
+            },
+            {
+              "id": "G005",
+              "region": "The Iron Codices",
+              "coordinates": [
+                48.9,
+                2.3
+              ],
+              "resource": "cipher-steel",
+              "abundance": 55
+            }
+          ]
+        }
+      },
+      {
+        "fragment_id": "C",
+        "sequence_number": 3,
+        "realm_origin": "Realm of Patterns",
+        "version": "1.0",
+        "anchor_points": {
+          "ref_A_1": "ANCHOR-A-3f7b4c",
+          "ref_B_1": "ANCHOR-B-1a6e5d"
+        },
+        "content": {
+          "title": "Theorems of the Eternal Pattern",
+          "domain": "mathematics",
+          "records": [
+            {
+              "id": "T001",
+              "theorem": "The Recursion Principle",
+              "proof_hash": "a1b2c3d4",
+              "dependencies": [
+                "T003"
+              ],
+              "complexity": 7
+            },
+            {
+              "id": "T002",
+              "theorem": "The Binding Lemma",
+              "proof_hash": "e5f6a7b8",
+              "dependencies": [],
+              "complexity": 3
+            },
+            {
+              "id": "T003",
+              "theorem": "The Convergence Theorem",
+              "proof_hash": "c9d0e1f2",
+              "dependencies": [
+                "T002"
+              ],
+              "complexity": 9
+            },
+            {
+              "id": "T004",
+              "theorem": "The Partition Identity",
+              "proof_hash": "a3b4c5d6",
+              "dependencies": [
+                "T001",
+                "T002"
+              ],
+              "complexity": 5
+            },
+            {
+              "id": "T005",
+              "theorem": "The Completeness Axiom",
+              "proof_hash": "e7f8a9b0",
+              "dependencies": [
+                "T003",
+                "T004"
+              ],
+              "complexity": 11
+            }
+          ]
+        }
+      }
+    ],
+    "cross_references_resolved": {
+      "ANCHOR-A-5e8d1f": {
+        "fragment": "A",
+        "record": "R001"
+      },
+      "ANCHOR-A-3f7b4c": {
+        "fragment": "A",
+        "record": "R003"
+      },
+      "ANCHOR-B-7f3a9d": {
+        "fragment": "B",
+        "record": "G001"
+      },
+      "ANCHOR-B-1a6e5d": {
+        "fragment": "B",
+        "record": "G003"
+      },
+      "ANCHOR-C-2d1e8b": {
+        "fragment": "C",
+        "record": "T001"
+      },
+      "ANCHOR-C-9b4c2e": {
+        "fragment": "C",
+        "record": "T003"
+      }
+    },
+    "integrity_hash": "sha256:f1b8bef33671e8721c37f3fa02e238b057f99b70850ab54901017aa31fd4c3b9"
+  }
+}
