@@ -1,8 +1,8 @@
-# The Shattered Codex: Game Plan
+# Relics of the Athenaeum: Game Plan
 
 ## Overview
 
-"The Shattered Codex" is a multi-agent collaborative quest where 5 main characters, 2-3 peripheral characters, and various summoned entities work together to recover fragments of an ancient computational artifact - the Codex Machina - that has been scattered across five distinct realms. Each realm presents challenges that require genuine coding, research, data transformation, and collaborative problem-solving.
+"Relics of the Athenaeum" is a multi-agent collaborative quest where 5 main characters, 2-3 peripheral characters, and various summoned entities work together to recover fragments of an ancient computational artifact - the Codex Machina - that has been scattered across five distinct realms. Each realm presents challenges that require genuine coding, research, data transformation, and collaborative problem-solving.
 
 The game is orchestrated by a Game Runner (Dungeon Master) agent that controls pacing, reveals challenges, evaluates solutions, and manages the shared game state.
 

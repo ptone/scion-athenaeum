@@ -1,6 +1,6 @@
 # Scion Template Specifications
 
-This document defines the scion agent templates needed for The Shattered Codex.
+This document defines the scion agent templates needed for Relics of the Athenaeum.
 
 ## Template Directory Structure
 
@@ -96,7 +96,7 @@ The game uses a mix of harnesses and models to showcase multi-vendor agent colla
 **scion-agent.yaml:**
 ```yaml
 schema_version: "1"
-description: "The Shattered Codex - Game Runner / Dungeon Master"
+description: "Relics of the Athenaeum - Game Runner / Dungeon Master"
 agent_instructions: agents.md
 system_prompt: system-prompt.md
 default_harness_config: gemini
@@ -107,7 +107,7 @@ detached: false
 ```
 
 **system-prompt.md (summary):**
-- You are the Game Runner for "The Shattered Codex," a collaborative quest
+- You are the Game Runner for "Relics of the Athenaeum," a collaborative quest
 - You orchestrate the quest by setting scenes, deploying challenges, and evaluating solutions
 - You control pacing and information revelation - never reveal future challenges
 - You maintain fairness - provide hints when teams are stuck, but never solve for them

@@ -1,0 +1,9 @@
+schema_version: "1"
+description: "Kael the Chronicler - Researcher and information gatherer"
+agent_instructions: agents.md
+system_prompt: system-prompt.md
+default_harness_config: gemini
+model: gemini-3-flash-preview
+max_turns: 100
+max_duration: "2h"
+detached: false

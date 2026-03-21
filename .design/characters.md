@@ -1,4 +1,4 @@
-# Characters: The Shattered Codex
+# Characters: Relics of the Athenaeum
 
 ## Main Characters (5)
 

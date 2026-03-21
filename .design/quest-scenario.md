@@ -1,4 +1,4 @@
-# Quest Scenario: The Shattered Codex
+# Quest Scenario: Relics of the Athenaeum
 
 ## Backstory
 

@@ -1,4 +1,4 @@
-# Game Mechanics & Process: The Shattered Codex
+# Game Mechanics & Process: Relics of the Athenaeum
 
 This document describes how the game actually runs: how the Game Runner orchestrates play, how agents communicate, how challenges are revealed, and how agents are directed and coordinated using scion primitives.
 
@@ -219,7 +219,7 @@ The Game Runner is the first agent started (by the human operator). Its startup 
 
 ```bash
 # Human operator starts the game
-scion start game-runner --type game-runner "Begin The Shattered Codex quest. Start all character agents, set the scene, and deploy Act I Challenge 1.1."
+scion start game-runner --type game-runner "Begin Relics of the Athenaeum quest. Start all character agents, set the scene, and deploy Act I Challenge 1.1."
 ```
 
 The Game Runner then:
@@ -392,7 +392,7 @@ Alternatively, character agents can be given permission in their `agents.md` to 
 Maintained by the Scribe agent (or by the Game Runner if no Scribe). Located at `/workspace/game-context.md`.
 
 ```markdown
-# The Shattered Codex - Game State
+# Relics of the Athenaeum - Game State
 
 ## Current Act: I - The Gathering
 ## Active Challenge: 1.2 - The Gateway Cipher
@@ -459,7 +459,7 @@ Each character agent's `agents.md` includes standard scion operational instructi
 ## Scion Operating Instructions
 [Standard sciontool status protocol - ask_user, task_completed]
 
-## Game Rules - The Shattered Codex
+## Game Rules - Relics of the Athenaeum
 
 You are a character in a collaborative quest game. You work with other agents to solve challenges.
 

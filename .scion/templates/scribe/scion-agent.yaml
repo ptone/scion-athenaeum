@@ -1,0 +1,9 @@
+schema_version: "1"
+description: "The Scribe - Quest state recorder and documentarian"
+agent_instructions: agents.md
+system_prompt: system-prompt.md
+default_harness_config: gemini
+model: gemini-3-flash-preview
+max_turns: 50
+max_duration: "4h"
+detached: true

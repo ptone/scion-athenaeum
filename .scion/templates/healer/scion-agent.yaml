@@ -1,0 +1,9 @@
+schema_version: "1"
+description: "The Healer - Error recovery and debugging specialist"
+agent_instructions: agents.md
+system_prompt: system-prompt.md
+default_harness_config: claude
+model: claude-sonnet-4-6
+max_turns: 15
+max_duration: "20m"
+detached: false

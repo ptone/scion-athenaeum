@@ -1,0 +1,9 @@
+schema_version: "1"
+description: "Relics of the Athenaeum - Game Runner / Dungeon Master"
+agent_instructions: agents.md
+system_prompt: system-prompt.md
+default_harness_config: gemini
+model: gemini-3.1-pro-preview
+max_turns: 200
+max_duration: "4h"
+detached: false

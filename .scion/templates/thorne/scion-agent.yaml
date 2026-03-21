@@ -1,0 +1,9 @@
+schema_version: "1"
+description: "Thorne the Sentinel - Validator and quality guardian"
+agent_instructions: agents.md
+system_prompt: system-prompt.md
+default_harness_config: claude
+model: claude-opus-4-6
+max_turns: 100
+max_duration: "2h"
+detached: false
