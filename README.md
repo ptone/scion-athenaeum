@@ -1,5 +1,7 @@
 # Relics of the Athenaeum
 
+<img width="1280" height="714" alt="Image" src="https://github.com/user-attachments/assets/cbee74a3-f3aa-4739-b423-0a83d5dd4c13" />
+
 A multi-agent collaborative quest game that demonstrates autonomous agent orchestration using Scion. Five AI characters with distinct specializations work together - guided by a Game Runner (Dungeon Master) agent - to solve computational challenges, recover lost knowledge fragments, and restore an ancient artifact.
 
 ## What This Demonstrates
