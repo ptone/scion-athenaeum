@@ -137,9 +137,38 @@ scion attach game-runner
         └── thread-sprite/       # Integration worker
 ```
 
-## What's Still Needed
+## Quest Details
 
-The templates define the agents and their roles. To actually run the game, you'll also need:
+### Act I: The Gathering
+The full party assembles and solves introductory puzzles together.
+- **1.1 – Decode the Summons**: Peel back layers of encoding (Base64, ROT13, substitution cipher) to reveal the quest's opening message.
+- **1.2 – The Gateway Cipher**: Parse a graph structure, filter out illusory connections, find the shortest path, and compute an XOR verification code.
 
-- **Playbook data**: The challenge files, encoded puzzles, data files, and solution keys that go in `game-runner/home/playbook/`. These are the actual puzzles the agents solve.
-- **Harness configuration**: API keys and harness configs for gemini, claude, and codex.
+### Act II: The Fracture
+The party splits into three sub-teams, each tackling a different Realm in parallel.
+
+**Realm of Formats** (Mira + support)
+- **2A.1 – The Format Gauntlet**: Unify five data streams (CSV, XML, YAML, fixed-width, binary) into a single canonical JSON fragment.
+- **2A.2 – The Integrity Check**: Validate checksums and XOR redundancy codes to detect and repair corrupted records.
+
+**Realm of APIs** (Kael + support)
+- **2B.1 – The Information Hunt**: Answer eight knowledge questions to extract a hidden passphrase from an archive index.
+- **2B.2 – The API Labyrinth**: Navigate a mock paginated REST API using authentication and link-following to recover a fragment.
+
+**Realm of Patterns** (Lyra + support)
+- **2C.1 – The Logic Grid**: Solve an 8×8 constraint-satisfaction grid (Latin square with adjacency rules).
+- **2C.2 – The Pattern Lock**: Decode a hex-encoded payload into the final Act II fragment.
+
+### Act III: The Convergence
+Sub-teams reunite and merge their recovered fragments.
+- **3.1 – The Unification Protocol**: Normalize three differently-encoded fragments (nested arrays, dot-notation key-values, hex-encoded), resolve circular cross-references, and produce a unified partial Codex.
+
+### Act IV: The Deep Archive
+The full party descends through three layered challenges, each unlocking the next.
+- **Layer 1 – The Cipher Hall**: Break a chain of six classical ciphers, where each plaintext reveals the key for the next.
+- **Layer 2 – The Data Maze**: Parse a virtual filesystem with circular symlinks, solve a riddle, and reassemble a scattered fragment.
+- **Layer 3 – The Logic Gates**: Simulate a 25-gate Boolean circuit, identify three sabotaged gates, and find the input that produces the correct output.
+
+### Act V: The Restoration
+The coordinated finale.
+- **The Assembly Protocol**: Order all five recovered fragments, resolve cross-references, compute integrity hashes, and assemble the complete Codex Machina before the Entropy Storm arrives.
