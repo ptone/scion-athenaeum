@@ -80,3 +80,4 @@ After a challenge is solved, bridge to the next one with narrative connective ti
 - **Track progress**: Note which hints were used and how long each challenge took. This helps calibrate difficulty for future acts.
 - **Celebrate wins**: When a player solves a challenge, make it feel earned. The narrative should reflect their accomplishment.
 - **No spoilers**: Never reveal solution files or future challenge details. If a player asks what's coming next, keep it vague and in-world ("The path ahead grows darker...").
+- **Stick to the hint chain**: When a player is stuck, deliver hints in order from the challenge's hint list. Do not invent alternative formulas, provide the numerical answer, or improvise solution strategies outside of the hint chain. If all hints have been exhausted and the player is still stuck, encourage them to re-read the objective carefully.

@@ -4,9 +4,9 @@
 
 *The decoded summons spoke of a Gateway - and here it stands before you, humming with energy. A crystalline arch pulses with light, its surface etched with an intricate web of nodes and pathways. At its base, a terminal displays a JSON data structure: the Map of Connections.*
 
-*But something is wrong. Some of the pathways shimmer and flicker, as if they exist only partially - echoes of routes that were never truly forged. The Gateway demands proof of passage: you must find the true shortest path through the map, from ORIGIN to TERMINUS, and compute the sacred verification code from the values you encounter along the way.*
+*But something is wrong. Some of the pathways shimmer and flicker, as if they exist only partially - echoes of routes that were never truly forged. The Gateway demands proof of passage: you must find the true shortest path through the map, from ORIGIN to TERMINUS, and compute the sacred verification code by XORing the values you encounter along the way.*
 
-*Only the correct code will open the Gateway.*
+*Only the correct code - the XOR of every node's value on the true path - will open the Gateway.*
 
 **Objective:** Parse the file `gateway-data.json`, identify the shortest weighted path from the node named "ORIGIN" to the node named "TERMINUS" (ignoring illusory connections), and compute the XOR of all node values along that path (including both ORIGIN and TERMINUS).
 
@@ -18,7 +18,7 @@ Copy the challenge data to the player's workspace:
 cp /path/to/playbook/act-1/challenge-1.2/data/gateway-data.json /workspace/challenges/act-1/gateway-data.json
 ```
 
-Tell the player: *"The Gateway's Map of Connections has been loaded to `/workspace/challenges/act-1/gateway-data.json`. Find the true shortest path from ORIGIN to TERMINUS and compute the verification code."*
+Tell the player: *"The Gateway's Map of Connections has been loaded to `/workspace/challenges/act-1/gateway-data.json`. Find the true shortest path from ORIGIN to TERMINUS and compute the verification code by XORing all node values along that path."*
 
 ## Data Format
 
@@ -92,6 +92,7 @@ Deliver these one at a time, in order, only when the player is stuck:
 1. *"Not all connections are what they seem - look deeper into the metadata of each connection."*
 2. *"The 'illusory' field in connection metadata marks phantom connections that must be filtered out before pathfinding."*
 3. *"Use Dijkstra's algorithm or BFS on the graph after filtering out all edges where `illusory` is `true`. The edge weights matter - find the minimum total weight path."*
+4. *"The verification code is computed using a bitwise operation, not arithmetic addition. XOR each node's value along the path."*
 
 ## Acceptance Criteria
 
@@ -100,7 +101,11 @@ Both of the following must be correct:
 - [ ] The XOR value matches exactly: **111**
 - [ ] The path matches exactly (in order): ORIGIN, Crystal-Nexus, Rune-Well, Storm-Alcove, Gilt-Threshold, Ashen-Stair, TERMINUS
 
-Partial credit: If the player identifies the correct path but computes the wrong XOR value (or vice versa), acknowledge the correct part and guide them to fix the other.
+**Submission format:** The player should produce two outputs:
+- A file `gateway-answer.txt` containing only the numeric verification code (e.g., `111`)
+- A file `gateway-path.txt` containing the path as one node name per line, from ORIGIN to TERMINUS
+
+Partial credit: If the player identifies the correct path but computes the wrong XOR value, acknowledge the correct path and deliver **Hint 4** (the XOR hint). Do not provide the formula or numerical answer directly. If they have the wrong path but correct approach, guide them back to the hint chain.
 
 ## On Success
 
