@@ -7,15 +7,7 @@
     "x4",
     "x5",
     "x6",
-    "x7",
-    "x8",
-    "x9",
-    "x10",
-    "x11",
-    "x12",
-    "x13",
-    "x14",
-    "x15"
+    "x7"
   ],
   "output": "out",
   "gates": [
@@ -59,8 +51,8 @@
       "id": "g5",
       "type": "OR",
       "inputs": [
-        "x8",
-        "x9"
+        "w1",
+        "w3"
       ],
       "output": "w5"
     },
@@ -68,8 +60,8 @@
       "id": "g6",
       "type": "XOR",
       "inputs": [
-        "x10",
-        "x11"
+        "w2",
+        "w4"
       ],
       "output": "w6"
     },
@@ -77,169 +69,71 @@
       "id": "g7",
       "type": "AND",
       "inputs": [
-        "x12",
-        "x13"
+        "w5",
+        "x2"
       ],
       "output": "w7"
     },
     {
       "id": "g8",
-      "type": "OR",
+      "type": "NOT",
       "inputs": [
-        "x14",
-        "x15"
+        "w6"
       ],
       "output": "w8"
     },
     {
       "id": "g9",
-      "type": "XOR",
+      "type": "OR",
       "inputs": [
-        "w1",
-        "w2"
+        "w7",
+        "w8"
       ],
       "output": "w9"
     },
     {
       "id": "g10",
-      "type": "AND",
+      "type": "XOR",
       "inputs": [
-        "w3",
-        "w4"
+        "w4",
+        "w9"
       ],
       "output": "w10"
     },
     {
       "id": "g11",
-      "type": "OR",
+      "type": "AND",
       "inputs": [
-        "w5",
-        "w6"
+        "w10",
+        "w1"
       ],
       "output": "w11"
     },
     {
       "id": "g12",
-      "type": "AND",
-      "inputs": [
-        "w7",
-        "w8"
-      ],
-      "output": "w12"
-    },
-    {
-      "id": "g13",
       "type": "OR",
-      "inputs": [
-        "w9",
-        "w10"
-      ],
-      "output": "w13"
-    },
-    {
-      "id": "g14",
-      "type": "AND",
       "inputs": [
         "w11",
-        "w12"
-      ],
-      "output": "w14"
-    },
-    {
-      "id": "g15",
-      "type": "AND",
-      "inputs": [
-        "w13",
-        "w14"
-      ],
-      "output": "w15"
-    },
-    {
-      "id": "g16",
-      "type": "NOT",
-      "inputs": [
-        "x0"
-      ],
-      "output": "w16"
-    },
-    {
-      "id": "g17",
-      "type": "XOR",
-      "inputs": [
-        "w16",
-        "x1"
-      ],
-      "output": "w17"
-    },
-    {
-      "id": "g18",
-      "type": "NOT",
-      "inputs": [
-        "x8"
-      ],
-      "output": "w18"
-    },
-    {
-      "id": "g19",
-      "type": "AND",
-      "inputs": [
-        "w17",
-        "w18"
-      ],
-      "output": "w19"
-    },
-    {
-      "id": "g20",
-      "type": "OR",
-      "inputs": [
-        "w15",
-        "w19"
-      ],
-      "output": "w20"
-    },
-    {
-      "id": "g21",
-      "type": "NOT",
-      "inputs": [
-        "x14"
-      ],
-      "output": "w21"
-    },
-    {
-      "id": "g22",
-      "type": "XOR",
-      "inputs": [
-        "w21",
-        "x15"
-      ],
-      "output": "w22"
-    },
-    {
-      "id": "g23",
-      "type": "AND",
-      "inputs": [
-        "w20",
-        "w22"
-      ],
-      "output": "w23"
-    },
-    {
-      "id": "g24",
-      "type": "OR",
-      "inputs": [
-        "w23",
-        "w12"
-      ],
-      "output": "w24"
-    },
-    {
-      "id": "g25",
-      "type": "AND",
-      "inputs": [
-        "w24",
-        "w13"
+        "w3"
       ],
       "output": "out"
+    }
+  ],
+  "test_vectors": [
+    {
+      "inputs": { "x0": 1, "x1": 1, "x2": 1, "x3": 0, "x4": 0, "x5": 0, "x6": 1, "x7": 1 },
+      "expected_output": 0,
+      "note": "Observed output from the corrupted circuit"
+    },
+    {
+      "inputs": { "x0": 1, "x1": 1, "x2": 0, "x3": 1, "x4": 0, "x5": 0, "x6": 1, "x7": 1 },
+      "expected_output": 1,
+      "note": "Observed output from the corrupted circuit"
+    },
+    {
+      "inputs": { "x0": 1, "x1": 1, "x2": 1, "x3": 0, "x4": 0, "x5": 0, "x6": 0, "x7": 0 },
+      "expected_output": 0,
+      "note": "Observed output from the corrupted circuit"
     }
   ]
 }

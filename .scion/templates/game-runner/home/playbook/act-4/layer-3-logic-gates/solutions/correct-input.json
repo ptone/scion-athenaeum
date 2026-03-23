@@ -1,22 +1,14 @@
 {
   "inputs": {
-    "x0": 1,
-    "x1": 1,
+    "x0": 0,
+    "x1": 0,
     "x2": 0,
     "x3": 0,
-    "x4": 0,
+    "x4": 1,
     "x5": 0,
     "x6": 0,
-    "x7": 0,
-    "x8": 0,
-    "x9": 0,
-    "x10": 0,
-    "x11": 0,
-    "x12": 0,
-    "x13": 0,
-    "x14": 1,
-    "x15": 0
+    "x7": 0
   },
   "output": 1,
-  "note": "Input that produces output=1 with faulty gates g7, g15, g22 (inverted outputs)"
+  "note": "Input that produces output=1 with faulty gates g4, g7 (inverted outputs). Many other inputs also work."
 }

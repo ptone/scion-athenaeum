@@ -36,7 +36,18 @@ Provide both files to the team. The filesystem is a text-based representation --
 
 ## Output
 
-Save the assembled fragment to: `/workspace/solutions/act-4/assembled-fragment-d.json`
+Save the solution to: `/workspace/solutions/act-4/fragment-d-paths.json`
+
+The solution must contain a JSON array of the three fragment part paths in order:
+```json
+[
+  "/archive/.../fragment-part-1.dat",
+  "/archive/.../fragment-part-2.dat",
+  "/archive/.../fragment-part-3.dat"
+]
+```
+
+**Alternatively**, the team may save the fully assembled Fragment D JSON to `/workspace/solutions/act-4/assembled-fragment-d.json` by concatenating the contents of the three parts in order. Either format is acceptable.
 
 ## Solution Key
 
@@ -62,6 +73,6 @@ The three paths are:
 
 ## Acceptance Criteria
 
-1. The assembled JSON file is valid and matches Fragment D in `solutions/assembled-file.txt`
-2. The solution correctly identifies all three file paths
+1. The solution correctly identifies all three fragment part paths (matching `solutions/target-path.txt`)
+2. If the assembled JSON format is used, it must be valid and match `solutions/assembled-file.txt`
 3. Circular symlinks are handled without infinite loops

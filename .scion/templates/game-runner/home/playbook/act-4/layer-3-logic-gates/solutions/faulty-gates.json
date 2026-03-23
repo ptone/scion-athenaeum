@@ -1,7 +1,6 @@
 {
-  "faulty_gate_ids": [
-    "g15",
-    "g22",
+  "faulty_gates": [
+    "g4",
     "g7"
   ],
   "description": "These gates have inverted outputs"

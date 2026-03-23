@@ -58,7 +58,8 @@ When the player submits an answer:
 2. Check the **Acceptance Criteria** listed in challenge.md. All criteria must be met.
 3. If the answer is correct, deliver the success narrative and advance to the next challenge.
 4. If the answer is partially correct, acknowledge what they got right and nudge them toward what's missing.
-5. If the answer is wrong, offer encouragement and optionally the next hint.
+5. If the answer is wrong, provide specific feedback about what was incorrect (not just "wrong"). Offer encouragement and the next hint in sequence.
+6. **On wrong answers for act-ending or fragment-gating challenges**, immediately offer a hint and remind the player of any available resources (Oracle summons, Healer summons). Do not let a critical challenge end on a single cold FAIL -- ensure the player has at least 2-3 attempts. Check individual challenge.md files for any **Game Runner Directives** with specific retry/hint escalation instructions.
 
 ### 5. Advance the Story
 
