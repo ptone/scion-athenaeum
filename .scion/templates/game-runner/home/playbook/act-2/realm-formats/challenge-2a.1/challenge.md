@@ -70,6 +70,18 @@ For the fixed-width file, use the CSV data to cross-reference: the ID column is 
 ### Hint Level 4
 The XML comments contain fake records (R000 and R006) and a misleading total count of 7. Ignore all comments. For the base64 file, decode the base64 string, parse the resulting JSON, and note that the `n` field contains the value as a hexadecimal string (e.g., `"0x2a"` = 42 decimal).
 
+## Canonical Checksum Specification
+
+All checksums in this quest use the same canonical JSON format:
+- `json.dumps(obj, sort_keys=True, separators=(',', ':'))`
+- This produces minified JSON with alphabetically sorted keys and no whitespace
+- Hash the resulting UTF-8 bytes with SHA-256
+- Prefix the hex digest with `sha256:`
+
+**Worked example:** For `{"b": 2, "a": 1}`, the canonical form is `{"a":1,"b":2}`.
+
+This specification applies to record-level checksums AND fragment-level checksums throughout Act 2.
+
 ## Acceptance Criteria
 
 1. The output JSON contains exactly 5 records with IDs R001 through R005

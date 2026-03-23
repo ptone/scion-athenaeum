@@ -13,9 +13,36 @@ mkdir -p /workspace/challenges/act-2a/challenge-2a.2
 cp data/corruption-manifest.json /workspace/challenges/act-2a/challenge-2a.2/
 ```
 
-Provide the corruption manifest and the team's unified Fragment A from Challenge 2A.1. Tell the team that **two records have corrupted `value` fields**: R002's value has been altered from 17 to 19, and R004's value has been altered from 28 to 32. (The team should discover this through checksum validation, not be told directly.)
+**CRITICAL SETUP STEP -- DO NOT SKIP:** Before delivering the challenge, you MUST create a corrupted version of the team's unified Fragment A. Copy their Fragment A JSON and modify these two values:
+- Change R002's `value` from 17 to 19
+- Change R004's `value` from 28 to 32
 
-When presenting this challenge, give the team their unified JSON but with these two values corrupted.
+Save this corrupted version as the team's working copy. The team should discover the corruption through checksum validation, NOT be told which records are corrupted.
+
+## Player-Facing Text (DO NOT MODIFY)
+
+> Deliver the following text verbatim to the players (you may add narrative flavor around it, but these instructions must be included exactly):
+
+---
+
+**Objective:** The unification process may have introduced corruption into your Fragment A records. You must verify every record's integrity and repair any damage before the Fragment can be sealed.
+
+**You are provided:**
+1. Your unified Fragment A JSON (which may contain corrupted values)
+2. A corruption manifest (`corruption-manifest.json`) containing:
+   - SHA-256 checksums for each record's correct state
+   - XOR redundancy codes that pair records together for value recovery
+
+**Steps:**
+1. For each record, compute its SHA-256 checksum using canonical JSON: `json.dumps(record, sort_keys=True, separators=(',', ':'))` -- then compare against the manifest checksums to find which records are corrupted.
+2. For each corrupted record, use the XOR redundancy codes to recover the correct value: `correct_value = xor_result XOR partner_value` (where the partner is the uncorrupted paired record).
+3. After repairing all corrupted records, seal Fragment A by computing a final SHA-256 checksum over the entire `content` block using the same canonical JSON format.
+
+**Checksum worked example:** To compute a record checksum, serialize the record object with sorted keys and no whitespace. For example, if a record is `{"id": "R001", "epoch": "First Age", "event": "The Founding", "value": 42, "glyph": "PHI"}`, the string to hash is: `{"epoch":"First Age","event":"The Founding","glyph":"PHI","id":"R001","value":42}`.
+
+**Submit** the repaired and sealed Fragment A JSON to `/workspace/solutions/act-2a/challenge-2a.2/`.
+
+---
 
 ## Corruption Details
 

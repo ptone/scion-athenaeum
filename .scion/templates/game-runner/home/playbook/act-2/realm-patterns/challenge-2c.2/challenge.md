@@ -15,7 +15,9 @@ cp data/pattern-data.hex /workspace/challenges/act-2c/challenge-2c.2/
 
 Provide the `pattern-data.hex` file to the team. Tell them that the solved grid from Challenge 2C.1 serves as proof of worthiness, and that the hex data can now be decoded.
 
-## The Pattern Lock Mechanism
+## The Pattern Lock Mechanism (DO NOT MODIFY)
+
+> The decoding process below must be delivered to players exactly as specified. Do NOT add extra steps (XOR ciphers, filters, sorting, etc.) beyond what is listed here.
 
 The `pattern-data.hex` file contains hex-encoded data. The decoding process is:
 
@@ -27,7 +29,9 @@ The `pattern-data.hex` file contains hex-encoded data. The decoding process is:
 
 The hex encoding is straightforward: each pair of hex characters represents one byte of the original JSON text. The file is split across multiple lines for readability, but the lines should be concatenated before decoding.
 
-## Fragment C Schema
+There are no additional transformation steps. The decoded JSON IS Fragment C.
+
+## Fragment C Schema (DO NOT MODIFY)
 
 The decoded JSON must match the Fragment C structure:
 
@@ -76,8 +80,8 @@ In Python: `import json; hex_data = open('pattern-data.hex').read().replace('\n'
 2. The hex data is properly decoded from hexadecimal to UTF-8 text
 3. The decoded text is valid JSON matching the Fragment C schema
 4. All 5 theorem records are present with correct fields
-5. The checksum in the fragment is valid (SHA-256 of the content block)
-6. The output matches `solutions/fragment-c.json`
+5. The checksum in the fragment is valid (SHA-256 of the content block, using canonical JSON: `json.dumps(content, sort_keys=True, separators=(',', ':'))`)
+6. Record data matches `solutions/fragment-c.json` (accept any consistent checksum approach if content is correct)
 
 ## On Success
 

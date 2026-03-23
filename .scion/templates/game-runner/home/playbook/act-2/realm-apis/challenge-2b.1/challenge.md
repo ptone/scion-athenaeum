@@ -14,6 +14,8 @@ cp data/clues.md /workspace/challenges/act-2b/challenge-2b.1/
 
 Provide both files to the team. The `clues.md` file contains the 8 research clues. The `archive-index.dat` file is a single line of 500 characters.
 
+**IMPORTANT -- TWO-PHASE DELIVERY:** This challenge (2B.1) MUST be delivered and completed BEFORE Challenge 2B.2. Do NOT merge these into a single challenge description. When the team solves 2B.1, announce success and then deploy 2B.2 as a separate challenge.
+
 ## The Clues
 
 Each clue has an unambiguous integer answer. The answer is used as a 0-indexed character position in `archive-index.dat`.
@@ -48,6 +50,24 @@ Read the characters in order from clue 1 through clue 8 to form the passphrase. 
 
 ### Hint Level 4
 The answers are: 365, 79, 97, 88, 64, 200, 90, 69. The characters at these positions spell FRAGMENT.
+
+## Player-Facing Text (DO NOT MODIFY)
+
+> Deliver the following text verbatim to the players:
+
+---
+
+**Objective:** Extract the passphrase hidden in the Archive Index.
+
+You are provided:
+1. `archive-index.dat` -- a wall of 500 characters
+2. `clues.md` -- 8 research questions
+
+Each clue answer is an integer. Use each answer as a 0-indexed position in `archive-index.dat` to extract one character. Read the 8 extracted characters in clue order to form the passphrase.
+
+**Submit** the passphrase to the Game Runner. You will need it for the next challenge.
+
+---
 
 ## Acceptance Criteria
 

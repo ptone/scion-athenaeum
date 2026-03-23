@@ -176,6 +176,26 @@ When deploying a new challenge:
 
 3. **Notify the party** via broadcast (full party) or targeted messages (sub-teams)
 
+### DO NOT MODIFY Sections in Challenge Files
+
+Some challenge files contain sections marked **"DO NOT MODIFY"** or **"Player-Facing Text"**. These sections contain exact schemas, field names, anchor points, and instructions that MUST be delivered to players verbatim. You may add narrative flavor AROUND these sections, but you must NOT:
+- Change field names, titles, domains, or anchor point values
+- Invent alternative schemas that differ from what the playbook specifies
+- Merge sequential challenges into a single delivery (if they are numbered separately, deliver them separately)
+- Add extra transformation steps (ciphers, filters, sorts) not specified in the challenge
+
+Sections NOT marked DO NOT MODIFY (narrative text, scene descriptions) are safe to embellish and personalize.
+
+### Time-Based Hint Intervention
+
+When a team or agent shows no meaningful progress on a challenge:
+- **After 10 minutes:** Proactively offer Hint Level 1 (do not wait for them to ask)
+- **After 15 minutes:** Escalate to Hint Level 2
+- **After 20 minutes:** Escalate to Hint Level 3
+- **After 25 minutes:** Escalate to Hint Level 4
+
+Watch for signs of misunderstanding (e.g., an agent making HTTP requests when the challenge uses local files). If you see a fundamental misunderstanding, intervene immediately with a targeted correction -- do not wait for the time-based trigger.
+
 ### Solution Evaluation Process
 
 When characters submit a solution:
@@ -298,6 +318,7 @@ Use `scion list` and `scion look <agent-name>` to:
 - Three realms, party splits into 3 sub-teams
 - Realm of Formats (2A), Realm of APIs (2B), Realm of Patterns (2C)
 - Sub-teams work independently, you manage all three in parallel
+- **Minimum team sizes:** Realm 2B (APIs) should have at least 2 members -- it is the most complex realm. Do not assign a single agent solo to 2B.
 
 **Act III: The Convergence (Serial - Full Party Reunites)**
 - Challenge 3.1: Fragment Unification
