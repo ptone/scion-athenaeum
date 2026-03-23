@@ -9,8 +9,8 @@
         "realm_origin": "Realm of Formats",
         "version": "1.0",
         "anchor_points": {
-          "ref_B_1": "ANCHOR-B-7f3a9d",
-          "ref_C_1": "ANCHOR-C-2d1e8b"
+          "ref_B_1": "ANCHOR-B-dd31ff",
+          "ref_C_1": "ANCHOR-C-e78d6e"
         },
         "content": {
           "title": "Chronicles of the First Age",
@@ -60,8 +60,8 @@
         "realm_origin": "Realm of APIs",
         "version": "1.0",
         "anchor_points": {
-          "ref_C_1": "ANCHOR-C-9b4c2e",
-          "ref_A_1": "ANCHOR-A-5e8d1f"
+          "ref_C_1": "ANCHOR-C-963606",
+          "ref_A_1": "ANCHOR-A-1e8758"
         },
         "content": {
           "title": "Atlas of the Living Lands",
@@ -126,8 +126,8 @@
         "realm_origin": "Realm of Patterns",
         "version": "1.0",
         "anchor_points": {
-          "ref_A_1": "ANCHOR-A-3f7b4c",
-          "ref_B_1": "ANCHOR-B-1a6e5d"
+          "ref_A_1": "ANCHOR-A-9b69d6",
+          "ref_B_1": "ANCHOR-B-a5b641"
         },
         "content": {
           "title": "Theorems of the Eternal Pattern",
@@ -183,27 +183,27 @@
       }
     ],
     "cross_references_resolved": {
-      "ANCHOR-A-5e8d1f": {
+      "ANCHOR-A-1e8758": {
         "fragment": "A",
         "record": "R001"
       },
-      "ANCHOR-A-3f7b4c": {
+      "ANCHOR-A-9b69d6": {
         "fragment": "A",
         "record": "R003"
       },
-      "ANCHOR-B-7f3a9d": {
+      "ANCHOR-B-dd31ff": {
         "fragment": "B",
         "record": "G001"
       },
-      "ANCHOR-B-1a6e5d": {
+      "ANCHOR-B-a5b641": {
         "fragment": "B",
         "record": "G003"
       },
-      "ANCHOR-C-2d1e8b": {
+      "ANCHOR-C-e78d6e": {
         "fragment": "C",
         "record": "T001"
       },
-      "ANCHOR-C-9b4c2e": {
+      "ANCHOR-C-963606": {
         "fragment": "C",
         "record": "T003"
       }

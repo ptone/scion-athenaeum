@@ -67,12 +67,12 @@ def validate(filepath):
 
     # Check cross-references
     expected_refs = {
-        "ANCHOR-A-5e8d1f": {"fragment": "A", "record": "R001"},
-        "ANCHOR-A-3f7b4c": {"fragment": "A", "record": "R003"},
-        "ANCHOR-B-7f3a9d": {"fragment": "B", "record": "G001"},
-        "ANCHOR-B-1a6e5d": {"fragment": "B", "record": "G003"},
-        "ANCHOR-C-2d1e8b": {"fragment": "C", "record": "T001"},
-        "ANCHOR-C-9b4c2e": {"fragment": "C", "record": "T003"}
+        "ANCHOR-A-1e8758": {"fragment": "A", "record": "R001"},
+        "ANCHOR-A-9b69d6": {"fragment": "A", "record": "R003"},
+        "ANCHOR-B-dd31ff": {"fragment": "B", "record": "G001"},
+        "ANCHOR-B-a5b641": {"fragment": "B", "record": "G003"},
+        "ANCHOR-C-e78d6e": {"fragment": "C", "record": "T001"},
+        "ANCHOR-C-963606": {"fragment": "C", "record": "T003"}
     }
     cross_refs = codex.get("cross_references_resolved", {})
     for anchor_id, expected_val in expected_refs.items():

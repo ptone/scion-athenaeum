@@ -52,9 +52,11 @@ Each decoded record contains: `id`, `theorem`, `proof_hash`, `dependencies`, and
 
 Each fragment references records in the other two fragments via anchor points. The anchors form a circular dependency chain:
 
-- **Fragment A** references Fragment B (`ANCHOR-B-7f3a9d`) and Fragment C (`ANCHOR-C-2d1e8b`)
-- **Fragment B** references Fragment C (`ANCHOR-C-9b4c2e`) and Fragment A (`ANCHOR-A-5e8d1f`)
-- **Fragment C** references Fragment A (`ANCHOR-A-3f7b4c`) and Fragment B (`ANCHOR-B-1a6e5d`)
+- **Fragment A** references Fragment B (`ANCHOR-B-dd31ff`) and Fragment C (`ANCHOR-C-e78d6e`)
+- **Fragment B** references Fragment C (`ANCHOR-C-963606`) and Fragment A (`ANCHOR-A-1e8758`)
+- **Fragment C** references Fragment A (`ANCHOR-A-9b69d6`) and Fragment B (`ANCHOR-B-a5b641`)
+
+The hex string in each anchor (e.g., `dd31ff`) is derived from the target record's ID. Specifically, it is the first 6 characters of the SHA-256 hash of the record ID string (e.g., `sha256("G001")[:6]`).
 
 Each anchor ID resolves to a specific record within its target fragment. The unified Codex must include a `cross_references_resolved` mapping that maps each anchor ID to its `{fragment, record}` pair.
 
@@ -94,8 +96,11 @@ Fragment C's hex strings are UTF-8 encoded JSON objects. Decode each with standa
 ### Hint Level 3
 The anchor points create circular dependencies -- A references B, B references C, C references A. You do not need to resolve them recursively. Parse all three fragments first, then resolve anchors by matching `ANCHOR-X-*` IDs to record IDs within each fragment.
 
-### Hint Level 4 (Oracle Cost)
-Parse all three fragments into a common record format first, then resolve anchors by matching ANCHOR-X-* IDs to record IDs within each fragment. The anchor resolution mapping is: `ANCHOR-A-5e8d1f` -> `R001`, `ANCHOR-A-3f7b4c` -> `R003`, `ANCHOR-B-7f3a9d` -> `G001`, `ANCHOR-B-1a6e5d` -> `G003`, `ANCHOR-C-2d1e8b` -> `T001`, `ANCHOR-C-9b4c2e` -> `T003`.
+### Hint Level 4
+The hex string in each anchor ID is not random -- it is the first 6 characters of the SHA-256 hash of the target record's ID. For example, `sha256("G001")` starts with `dd31ff`. Hash each record ID and match against the anchor hex codes to resolve them.
+
+### Hint Level 5 (Oracle Cost)
+The complete anchor resolution mapping is: `ANCHOR-A-1e8758` -> `R001`, `ANCHOR-A-9b69d6` -> `R003`, `ANCHOR-B-dd31ff` -> `G001`, `ANCHOR-B-a5b641` -> `G003`, `ANCHOR-C-e78d6e` -> `T001`, `ANCHOR-C-963606` -> `T003`.
 
 ## Acceptance Criteria
 
