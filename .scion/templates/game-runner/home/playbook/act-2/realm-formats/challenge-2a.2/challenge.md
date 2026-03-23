@@ -62,3 +62,14 @@ R002's value should be 17 (not 19). R004's value should be 28 (not 32). After re
 3. All individual record checksums now match the manifest
 4. The final Fragment A JSON includes a valid `checksum` field computed over the `content` block
 5. The output matches `solutions/validated-fragment-a.json`
+
+## On Success
+
+Stage the validated Fragment A to the player's inventory for use in Act 5:
+
+```bash
+mkdir -p /workspace/inventory
+cp ~/playbook/act-2/realm-formats/challenge-2a.2/solutions/validated-fragment-a.json /workspace/inventory/fragment-a.json
+```
+
+Deliver the success narrative and advance to the next challenge.

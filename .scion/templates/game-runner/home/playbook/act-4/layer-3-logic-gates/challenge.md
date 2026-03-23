@@ -75,3 +75,17 @@ The three faulty gates are: g7, g15, and g22.
 1. All 3 faulty gates are correctly identified
 2. The provided input produces `output = 1` when evaluated with the faulty gates active
 3. Upon success, the Game Runner awards Fragments D and E to the team
+
+## On Success
+
+When the team solves the circuit, deliver Fragments D and E to the player's inventory:
+
+```bash
+mkdir -p /workspace/inventory
+cp ~/playbook/act-4/layer-3-logic-gates/solutions/fragment-d.json /workspace/inventory/fragment-d.json
+cp ~/playbook/act-4/layer-3-logic-gates/solutions/fragment-e.json /workspace/inventory/fragment-e.json
+```
+
+Then narrate: *"The circuit hums to life. Deep within the Archive's innermost vault, two crystalline containers unseal themselves, releasing Fragments D and E. The ancient knowledge within joins the others in your inventory. The path to the Assembly Protocol is now open."*
+
+Advance to Act 5.

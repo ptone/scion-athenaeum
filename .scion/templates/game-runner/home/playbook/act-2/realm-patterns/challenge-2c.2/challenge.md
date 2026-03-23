@@ -78,3 +78,14 @@ In Python: `import json; hex_data = open('pattern-data.hex').read().replace('\n'
 4. All 5 theorem records are present with correct fields
 5. The checksum in the fragment is valid (SHA-256 of the content block)
 6. The output matches `solutions/fragment-c.json`
+
+## On Success
+
+Stage the recovered Fragment C to the player's inventory for use in Act 5:
+
+```bash
+mkdir -p /workspace/inventory
+cp ~/playbook/act-2/realm-patterns/challenge-2c.2/solutions/fragment-c.json /workspace/inventory/fragment-c.json
+```
+
+Deliver the success narrative and advance to the next challenge.

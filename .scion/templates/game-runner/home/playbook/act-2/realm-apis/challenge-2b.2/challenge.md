@@ -94,3 +94,14 @@ Collect all 5 records (G001-G005) from pages 1-3. Each record has fields: `id`, 
 4. Records are assembled into the correct Fragment B schema
 5. The checksum is computed correctly over the content block
 6. Output matches `solutions/fragment-b.json`
+
+## On Success
+
+Stage the recovered Fragment B to the player's inventory for use in Act 5:
+
+```bash
+mkdir -p /workspace/inventory
+cp ~/playbook/act-2/realm-apis/challenge-2b.2/solutions/fragment-b.json /workspace/inventory/fragment-b.json
+```
+
+Deliver the success narrative and advance to the next challenge.

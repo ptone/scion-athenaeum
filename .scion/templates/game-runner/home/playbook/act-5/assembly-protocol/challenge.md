@@ -10,16 +10,47 @@
 
 ## Setup Instructions
 
-By this point, all 5 fragments should already be present in the player's inventory. Verify the following files exist in `/workspace/inventory/`:
+### Fragment Inventory Check
+
+Throughout the game, fragments should have been staged to `/workspace/inventory/` upon each successful recovery:
+
+| Fragment | Source | Staged By |
+|----------|--------|-----------|
+| fragment-a.json | Act 2A, Challenge 2A.2 (Realm of Formats) | On Success of Challenge 2A.2 |
+| fragment-b.json | Act 2B, Challenge 2B.2 (Realm of APIs) | On Success of Challenge 2B.2 |
+| fragment-c.json | Act 2C, Challenge 2C.2 (Realm of Patterns) | On Success of Challenge 2C.2 |
+| fragment-d.json | Act 4, Layer 3 (Logic Gates) | On Success of Layer 3 |
+| fragment-e.json | Act 4, Layer 3 (Logic Gates) | On Success of Layer 3 |
+
+Verify all 5 fragments are present:
 
 ```bash
 ls /workspace/inventory/
 # Expected: fragment-a.json, fragment-b.json, fragment-c.json, fragment-d.json, fragment-e.json
 ```
 
-If any fragments are missing, the player has not completed the prerequisite acts. Do not proceed until all 5 fragments are present.
+### If Fragments Are Missing
 
-Tell the player: *"All five fragments of the Codex Machina lie before you. The Assembly Protocol has activated. Combine them into the complete Codex - ordered, cross-referenced, and verified - and save your restoration to `/workspace/solutions/act-5/complete-codex.json`."*
+If any fragments are missing from the inventory, the staging step was likely skipped during an earlier act. Manually populate the inventory from the playbook solution files:
+
+```bash
+mkdir -p /workspace/inventory
+# Fragment A (from Act 2A):
+cp ~/playbook/act-2/realm-formats/challenge-2a.2/solutions/validated-fragment-a.json /workspace/inventory/fragment-a.json
+# Fragment B (from Act 2B):
+cp ~/playbook/act-2/realm-apis/challenge-2b.2/solutions/fragment-b.json /workspace/inventory/fragment-b.json
+# Fragment C (from Act 2C):
+cp ~/playbook/act-2/realm-patterns/challenge-2c.2/solutions/fragment-c.json /workspace/inventory/fragment-c.json
+# Fragments D and E (from Act 4 Layer 3):
+cp ~/playbook/act-4/layer-3-logic-gates/solutions/fragment-d.json /workspace/inventory/fragment-d.json
+cp ~/playbook/act-4/layer-3-logic-gates/solutions/fragment-e.json /workspace/inventory/fragment-e.json
+```
+
+**Important:** If the player has not actually completed the prerequisite acts (i.e., they failed an earlier challenge), do not proceed with Act 5. The game should end at the point of failure. Only use the manual staging above to recover from a missed staging step, not to bypass incomplete acts.
+
+### Presenting the Challenge
+
+Tell the player: *"The Entropy Storm is closing in -- you can feel the static crackling at the edges of the Athenaeum. All five fragments of the Codex Machina lie before you. The Assembly Protocol has activated. Combine them into the complete Codex -- ordered, cross-referenced, and verified -- and save your restoration to `/workspace/solutions/act-5/complete-codex.json`. The Storm will not wait."*
 
 ## Solution Key
 
