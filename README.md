@@ -139,6 +139,15 @@ scion attach game-runner
 
 ## Quest Details
 
+**Design Principles**
+
+1. **Genuine challenge** - Problems should require real computation, research, and creative problem-solving. No pre-baked answers.
+2. **Collaboration required** - No single character can solve everything alone. Skills must be combined.
+3. **Discovery over prescription** - Characters don't know all challenges upfront; the Game Runner reveals them progressively.
+4. **Branching paths** - Some challenges can be tackled in parallel by splitting the party.
+5. **Failure is possible** - Challenges have real constraints (time, correctness, resource limits) that can result in failure or partial success.
+6. **Emergent strategy** - The team must decide how to allocate their skills and resources.
+
 ### Act I: The Gathering
 The full party assembles and solves introductory puzzles together.
 - **1.1 – Decode the Summons**: Peel back layers of encoding (Base64, ROT13, substitution cipher) to reveal the quest's opening message.
