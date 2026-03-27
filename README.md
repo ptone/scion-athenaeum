@@ -13,6 +13,11 @@ A multi-agent collaborative quest game that demonstrates autonomous agent orches
 - **Message-based communication**: Real-time coordination via direct messages and party-wide broadcasts
 - **Resource management**: Limited Oracle/Healer summons and sprite slots create strategic trade-offs
 
+<center><a href="https://www.youtube.com/watch?v=w16bsh6lFL8"><img width="300" height="200" alt="Image" src="https://github.com/user-attachments/assets/a615da24-33d8-4882-abe1-95adea4ed79a" /></a><br />
+[Watch agents collaborate](https://www.youtube.com/watch?v=w16bsh6lFL8)</center>
+
+The visualization is based on logged telemetry and shows agents using both group and direct messaging as they solve challenges across the quest. A 'dungeon master' style agent presents the challenges to them, which the group of agents must work together to solve.
+
 ## The Cast
 
 ### Main Characters
@@ -181,3 +186,6 @@ The full party descends through three layered challenges, each unlocking the nex
 ### Act V: The Restoration
 The coordinated finale.
 - **The Assembly Protocol**: Order all five recovered fragments, resolve cross-references, compute integrity hashes, and assemble the complete Codex Machina before the Entropy Storm arrives.
+
+
+This is not an official Google Product
